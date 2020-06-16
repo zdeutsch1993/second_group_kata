@@ -174,13 +174,11 @@ const kata14heading = document.createElement('h1')
 kata14heading.append('Kata 14');
 mainElement.append(kata14heading)
 
-let sum = 0;
-let index = sampleArray.length;
-while (index--) {
-    sum += Math.pow(sampleArray[index], 2);
-}
+let square = sampleArray.map(x => Math.pow(x, 2));
 
-mainElement.append(sum)
+
+mainElement.append(square)
+
 
 const kata15heading = document.createElement('h1')
 kata15heading.append('Kata 15');
